@@ -130,7 +130,7 @@ function App() {
             .replace('screen_7', 'facial_features')
             .replace('screen_8', 'shape')         
             .replaceAll('&screen_9=', '')
-        console.log(document.getElementById('glasses-quiz-widget').getAttribute("data-sourse") + string);
+        console.log(document.getElementById('glasses-quiz-widget').getAttribute("data-source") + string);
     }
     function onStepChange(step){
         setStep(step)      

@@ -1,7 +1,7 @@
 {
   "name": "main",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@mdi/js": "^6.7.96",
     "@mdi/react": "^1.6.0",

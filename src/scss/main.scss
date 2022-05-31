@@ -1,11 +1,65 @@
 @import "font";
 @import "variables";
 @import "mixins";
+
 *{
   box-sizing: border-box;
 }
 body{
   font-family: 'Open Sans';
+}
+.intro__btn{
+  background: $btn_primary;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 13px 48px;
+  border-radius: $br_btn;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+.outro__wrapper {
+  @include fdc();
+  justify-content: start;
+  text-align: center;
+  height: 90%;
+  padding: 38px 30px 26px 30px;
+}
+.outro__header {
+  font-family: "Open Sans";
+  font-weight: 700;
+  margin-top: 32px;
+  font-size: 20px;
+  color: $primary_color;
+}
+.outro__text {
+  color: $text_prompt;
+  font-size: 15px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  margin: 12px 0px 50px 0px;
+}
+.outro__btn{
+  background: $btn_primary;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 13px 48px;
+  border-radius: $br_btn;
+  cursor: pointer;
+}
+
+
+.prepend__img{
+  box-shadow: $shadow_neo;
+  border-radius: 50%;
+  padding: 20px;
+  @include fdc();
+  img{
+    width: 80px;
+  }
 }
 .progress__wrap {
   position: relative;
@@ -31,25 +85,6 @@ body{
   display: none;
 }
 
-.pa-2{
-  padding: 4px;
-}
-.pa-3{
-  padding: 6px;
-}
-.pa-4{
-  padding: 8px;
-}
-
-.ma-2{
-  margin: 4px;
-}
-.ma-3{
-  margin: 6px;
-}
-.ma-4{
-  margin: 8px;
-}
 .progress__back {
   display: block;
 }
@@ -59,47 +94,7 @@ body{
 .mx-auto{
   margin: 0 auto;
 }
-.check_icon{
-  display: none;
-}
-.selected{
-  position: relative;
-  .check_icon{
-    color: white;
-    z-index: 999999999999;
-    display: block !important;
-    position: absolute;
-    padding: 4px;
-    background: $primary;
-    top: 0;
-    right: 0;
-    border-radius: 50%;
-    transform: translate(30%, -50%) scale(.8);
-  }
-  border: 1px solid $primary !important;
-}
-.progress__logo{
-  height: 30px;
-}
-.line_wrapper{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  left: 0;
-}
-#glasses-quiz-widget {
-  height: 100%;
-}
-.App {
-  height: 100%;
-}
-.line{
-  position: relative;
-  overflow: hidden;
-  height: $line_height;
-  background-color: #D8D8D8;
-  width: 100%;
-}
+
 .line__current{
   position: absolute;
   left: -100%;
@@ -157,8 +152,52 @@ body{
   }
 }
 
+.check_icon{
+  display: none;
+}
+.selected{
+  position: relative;
+  .check_icon{
+    color: white;
+    z-index: 999999999999;
+    display: block !important;
+    position: absolute;
+    padding: 4px;
+    background: $primary_color;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    transform: translate(30%, -50%) scale(.8);
+  }
+  border: 1px solid $primary_color !important;
+}
+.progress__logo{
+  height: 30px;
+}
+.line_wrapper{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+#glasses-quiz-widget {
+  height: 100%;
+}
+.App {
+  height: 100%;
+}
+.line{
+  position: relative;
+  overflow: hidden;
+  height: $line_height;
+  background-color: #D8D8D8;
+  width: 100%;
+}
+
+
 .variants_scroll{
   overflow-x: scroll;
+  margin-bottom: 20px;
 }
 .variants_scroll::-webkit-scrollbar { width: 0; }
 /* хром, сафари */
@@ -174,7 +213,7 @@ body{
   .variant_item{
     border: 1px solid transparent;
     &:hover{
-      border: 1px solid $primary;
+      border: 1px solid $primary_color;
     }
     .variant_item__img{
       @include fdc();
@@ -209,7 +248,7 @@ body{
   font-weight: 700;
   margin-top: 40px;
   font-size: 24px;
-  color: $primary;
+  color: $primary_color;
 }
 
 .intro__text{
@@ -219,26 +258,7 @@ body{
   font-weight: 700;
   margin: 30px 0px;
 }
-.intro__btn{
-  background: $btn_primary;
-  outline: none;
-  border: none;
-  color: white;
-  font-size: 18px;
-  padding: 13px 48px;
-  border-radius: $br_btn;
-  cursor: pointer;
-  text-decoration: none !important;
-}
-.prepend__img{
-  box-shadow: $shadow_neo;
-  border-radius: 50%;
-  padding: 20px;
-  @include fdc();
-  img{
-    width: 80px;
-  }
-}
+
 .text_prompt{
   font-family: 'Roboto';
   font-weight: 400;
@@ -265,7 +285,7 @@ body{
     font-size: 24px;
     font-family: 'Open Sans';
     font-weight: 700;
-    color: $primary;
+    color: $primary_color;
     margin-top: 30px;
   }
 }
@@ -317,36 +337,4 @@ body{
   cursor: none;
   background: #DEDEDE;
 }
-.outro__wrapper {
-  @include fdc();
-  justify-content: start;
-  text-align: center;
-  height: 90%;
-  padding: 38px 30px 26px 30px;
-}
-.outro__header {
-  font-family: "Open Sans";
-  font-weight: 700;
-  margin-top: 32px;
-  font-size: 20px;
-  color: $primary;
-}
-.outro__text {
-  color: $text_prompt;
-  font-size: 15px;
-  font-family: "Open Sans";
-  font-weight: 700;
-  margin: 12px 0px 50px 0px;
-}
-.outro__btn{
-  background: $btn_primary;
-  outline: none;
-  border: none;
-  color: white;
-  font-size: 18px;
-  padding: 13px 48px;
-  border-radius: $br_btn;
-  cursor: pointer;
-}
-
 

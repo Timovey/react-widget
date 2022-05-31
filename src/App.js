@@ -1,7 +1,6 @@
 import {useEffect, useState} from "react";
 import Progress from './components/Progress/index'
 import quests from "./helpers/questions";
-
 import ovalMan1 from "./static/img/ovalMan1.png";
 import ovalMan2 from "./static/img/ovalMan2.png";
 import ovalMan3 from "./static/img/ovalMan3.png";
@@ -34,8 +33,7 @@ function App() {
             style.id = 'widget'
             style.href = 'https://timovey.github.io/react-widget/static/css/style.css'
             style.rel = 'stylesheet'
-            document.querySelector('head').appendChild(style)
-            
+            document.querySelector('head').appendChild(style)    
         }
         else {
         }
@@ -110,7 +108,6 @@ function App() {
     }, [resultQuery])
 
     function onSend() {
-        // console.log(resultQuery);
         let string = finalStringToDisplay;
         string = string
                     .replace('screen_10', 'brand')

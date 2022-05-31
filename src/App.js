@@ -28,7 +28,6 @@ function App() {
     const [loading, setLoading] = useState(false)
     const [stepToDisplay, setStepToDisplay] = useState(0)
     const [finalStringToDisplay, setFinalStringToDisplay] = useState('')
-    const [url,setUrl] = useState('')
     useEffect(()=>{
         if(!document.getElementById('widget')){
             let style = document.createElement('link')
@@ -39,7 +38,6 @@ function App() {
             
         }
         else {
-            setUrl(document.getElementById('glasses-quiz-widget').getAttribute("data-sourse"))
         }
     }, [])
 
@@ -132,8 +130,7 @@ function App() {
             .replace('screen_7', 'facial_features')
             .replace('screen_8', 'shape')         
             .replaceAll('&screen_9=', '')
-            console.log(url)
-        console.log(string);
+        console.log(document.getElementById('glasses-quiz-widget').getAttribute("data-sourse") + string);
     }
     function onStepChange(step){
         setStep(step)      

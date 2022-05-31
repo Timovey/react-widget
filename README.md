@@ -26,6 +26,9 @@ id="glasses-quiz-widget" и data-source=”https://example.com/" в место, 
 Для встраивания скрипта в проект необходимо
 
 ### `создать элемент на <div></>`
+и указать в нем id и data-sourse
+
+Подключить скрипт ["https://timovey.github.io/react-widget/static/js/main.fe82406c.js"]
 
 
 

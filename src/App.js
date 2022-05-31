@@ -2,24 +2,24 @@ import {useEffect, useState} from "react";
 import Progress from './components/Progress/index'
 import quests from "./helpers/questions";
 
-import ovalMan1 from "./static/img/ovalMan1.svg";
-import ovalMan2 from "./static/img/ovalMan2.svg";
-import ovalMan3 from "./static/img/ovalMan3.svg";
-import ovalWoman1 from './static/img/ovalWoman1.svg'
-import ovalWoman2 from './static/img/ovalWoman2.svg'
-import ovalWoman3 from './static/img/ovalWoman3.svg'
+import ovalMan1 from "./static/img/ovalMan1.png";
+import ovalMan2 from "./static/img/ovalMan2.png";
+import ovalMan3 from "./static/img/ovalMan3.png";
+import ovalWoman1 from './static/img/ovalWoman1.png'
+import ovalWoman2 from './static/img/ovalWoman2.png'
+import ovalWoman3 from './static/img/ovalWoman3.png'
 import Question from "./components/Question";
 import {QuestionContext} from "./context/QuestionContext";
 import Intro from "./components/Intro";
 import Outro from './components/Outro'
-import womansGlasses1 from './static/img/glasses_woman1.svg'
-import womansGlasses2 from './static/img/glasses_woman2.svg'
-import mansGlasses1 from "./static/img/glasses_man1.svg";
-import mansGlasses2 from "./static/img/glasses_man2.svg";
+import womansGlasses1 from './static/img/glasses_woman1.png'
+import womansGlasses2 from './static/img/glasses_woman2.png'
+import mansGlasses1 from "./static/img/glasses_man1.png";
+import mansGlasses2 from "./static/img/glasses_man2.png";
 
-import twoFaces1 from "./static/img/twoFaces1.svg";
-import twoFaces2 from "./static/img/twoFaces2.svg";
-import twoFaces3 from "./static/img/twoFaces3.svg";
+import twoFaces1 from "./static/img/twoFaces1.png";
+import twoFaces2 from "./static/img/twoFaces2.png";
+import twoFaces3 from "./static/img/twoFaces3.png";
 
 function App() {
     const [resultQuery, setResultQuery] = useState([])

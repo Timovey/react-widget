@@ -1,4 +1,4 @@
-import like from '../../static/img/like.svg'
+import like from '../../static/img/like.png'
 import {QuestionContext} from "../../context/QuestionContext";
 import {useContext} from "react";
 import { useEffect } from 'react';

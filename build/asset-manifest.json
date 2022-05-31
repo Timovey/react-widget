@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7d7a9f5d.css",
+    "main.js": "/static/js/main.c104f484.js",
+    "static/media/firstGlasses.png": "/static/media/firstGlasses.a3ad0cf69c5acd366bfa.png",
+    "static/media/4lide.png": "/static/media/4lide.fee808861dc208f8048e.png",
+    "index.html": "/index.html",
+    "main.7d7a9f5d.css.map": "/static/css/main.7d7a9f5d.css.map",
+    "main.c104f484.js.map": "/static/js/main.c104f484.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d7a9f5d.css",
+    "static/js/main.c104f484.js"
+  ]
+}

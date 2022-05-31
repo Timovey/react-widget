@@ -33,7 +33,7 @@ function App() {
         if(!document.getElementById('widget')){
             let style = document.createElement('link')
             style.id = 'widget'
-            style.href = 'https://github.com/Timovey/react-widget/tree/master/static/css/style.css'
+            style.href = 'https://timovey.github.io/react-widget/static/css/style.css'
             style.rel = 'stylesheet'
             document.querySelector('head').appendChild(style)
             

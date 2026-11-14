@@ -26,9 +26,11 @@ id="glasses-quiz-widget" и data-source=”https://example.com/" в место, 
 Для встраивания скрипта в проект необходимо
 
 ### `создать элемент на <div></>`
-и указать в нем id и data-sourse
+и указать в нем id="glasses-quiz-widget" и data-source — адрес, на который виджет перенаправит пользователя с ответами в query-параметрах
 
-Подключить скрипт ["https://timovey.github.io/react-widget/static/js/main.23a2b0b3.js"]
+Подключить скрипт ["https://timovey.github.io/react-widget/static/js/main.f8ea4819.js"]
+
+Стили виджета подгружаются автоматически и действуют только внутри элемента `#glasses-quiz-widget`.
 
 
 

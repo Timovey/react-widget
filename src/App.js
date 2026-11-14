@@ -127,7 +127,17 @@ function App() {
             .replace('screen_7', 'facial_features')
             .replace('screen_8', 'shape')         
             .replaceAll('&screen_9=', '')
-        console.log(document.getElementById('glasses-quiz-widget').getAttribute("data-source") + string);
+
+        // Раньше результат только печатался в консоль и никуда не уходил.
+        // Теперь пользователь переходит на адрес из data-source с ответами в query-параметрах.
+        const source = document.getElementById('glasses-quiz-widget')?.getAttribute('data-source')
+        if (!source) {
+            console.error('glasses-quiz-widget: не задан атрибут data-source, результат некуда отправить')
+            return
+        }
+        const url = new URL(source, window.location.href)
+        new URLSearchParams(string).forEach((value, key) => url.searchParams.append(key, value))
+        window.location.assign(url.toString())
     }
     function onStepChange(step){
         setStep(step)      

@@ -33,7 +33,8 @@ export default function Variants({variants, isMultiple, onVariantCheck}){
                 {
                     variants.map((item, key)=>(
                             <VariantItem
-                                className={answer.join(' ').includes(item.value) ? 'selected': ''}
+                                // точное совпадение: поиск подстроки подсвечивал вариант "21" при выбранном "211"
+                                className={answer.includes(item.value) ? 'selected': ''}
                                 onQuestionAsk={onVariantPush}
                                 key={key}
                                 variant={item}/>
